@@ -1,0 +1,34 @@
+<package>
+  <description brief="EVaRT client">
+
+    EVa Real-Time Software(tm) - EVaRT(tm) - provides a user with a
+    simple and powerful interface to the Motion Analysis(tm) motion
+    capture hardware. Under a single software environment you can set
+    up, calibrate, capture motion in real-time, capture motion for
+    post processing, edit and save data in the format of your choice.
+
+    The evart-stream package contains a network server that connects
+    to the EVaRT(tm) motion capture software through the official
+    SDK. It then listen to the network for data streaming requests.
+
+    evart-client (this package) is a library with a programming
+    interface that can control the evart-stream server. It also
+    contains a very basic debugging client that can understand simple
+    commands from the standard input and send them to the server.
+
+  </description>
+  <author>Anthony Mallet/anthony.mallet@laas.fr,
+    packaging by Thomas Moulard/thomas.moulard@gmail.com</author>
+  <license>BSD</license>
+  <review status="experimental" notes=""/>
+  <url>http://ros.org/wiki/evart-client</url>
+
+  <export>
+    <cpp
+       cflags="-I${prefix}/install/include"
+       lflags="-Wl,-rpath,${prefix}/install/lib -L${prefix}/install/lib -levart-client"
+       />
+  </export>
+
+  <versioncontrol type="git" url="git://git.openrobots.org/robots/evart-client"/>
+</package>

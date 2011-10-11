@@ -1,0 +1,9 @@
+<stack>
+  <description brief="motion_analysis_mocap">motion_analysis_mocap</description>
+  <author>Maintained by Thomas Moulard</author>
+  <license></license>  
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/motion_analysis_mocap</url>
+  <depend stack="ros" />
+
+</stack>
