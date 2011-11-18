@@ -1,3 +1,3 @@
-[submodule "evart_ros"]
-	path = evart_ros
-	url = git://github.com/laas/evart_ros.git
+[submodule "evart_gridge"]
+	path = evart_bridge
+	url = git://github.com/laas/evart_bridge.git
