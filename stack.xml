@@ -12,6 +12,9 @@
   <license>BSD</license>
   <review status="unreviewed" notes=""/>
   <url>http://ros.org/wiki/motion_analysis_mocap</url>
+
+  <depend stack="documentation" /> <!-- rosep: doxygen -->
+
   <depend stack="common_msgs" /> <!-- geometry_msgs -->
   <depend stack="geometry" /> <!-- tf, bullet -->
   <depend stack="ros" />

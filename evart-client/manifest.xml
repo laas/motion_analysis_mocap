@@ -33,6 +33,8 @@
 
   <versioncontrol type="git" url="git://git.openrobots.org/robots/evart-client"/>
 
+  <rosdep name="doxygen"/>
+
   <platform os="ubuntu" version="10.04"/>
   <platform os="ubuntu" version="10.10"/>
   <platform os="ubuntu" version="11.04"/>
