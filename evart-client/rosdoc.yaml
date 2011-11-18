@@ -1,0 +1,4 @@
+ - builder: external
+   external_url: http://homepages.laas.fr/~mallet/soft/mocap/evart-client/doc
+   output_dir: cpp
+   name: C++ API

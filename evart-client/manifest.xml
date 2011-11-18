@@ -20,15 +20,20 @@
   <author>Anthony Mallet/anthony.mallet@laas.fr,
     packaging by Thomas Moulard/thomas.moulard@gmail.com</author>
   <license>BSD</license>
-  <review status="experimental" notes=""/>
-  <url>http://ros.org/wiki/evart-client</url>
+  <review status="unreviewed" notes=""/>
+  <url>http://homepages.laas.fr/mallet/soft/mocap/evart-client</url>
 
   <export>
     <cpp
        cflags="-I${prefix}/install/include"
        lflags="-Wl,-rpath,${prefix}/install/lib -L${prefix}/install/lib -levart-client"
        />
+    <rosdoc config="rosdoc.yaml" />
   </export>
 
   <versioncontrol type="git" url="git://git.openrobots.org/robots/evart-client"/>
+
+  <platform os="ubuntu" version="10.04"/>
+  <platform os="ubuntu" version="10.10"/>
+  <platform os="ubuntu" version="11.04"/>
 </package>
