@@ -1,6 +1,6 @@
 VERSION=2.2
 TARBALL=evart-client-$(VERSION).tar.gz
-TARBALL_URL=http://softs.laas.fr/openrobots/distfiles/evart/${TARBALL}
+TARBALL_URL=http://www.openrobots.org/distfiles/evart/${TARBALL}
 
 SOURCE_DIR=build/evart-client-$(VERSION)
 UNPACK_CMD=tar xzf
