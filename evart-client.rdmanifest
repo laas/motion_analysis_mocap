@@ -1,0 +1,24 @@
+uri: 'http://www.openrobots.org/distfiles/evart/evart-client-2.2.tar.gz'
+md5sum: 430b9978d0997d20433667dc8b909a41
+install-script: |
+  #!/bin/bash
+  set -o errexit
+  export LD_LIBRARY_PATH=/usr/local/lib/pkgconfig:/usr/lib/pkgconfig
+  mkdir -p build
+  cd build
+  CPPFLAGS="-DNDEBUG" CXXFLAGS="-02 -g" ../configure
+  make
+  echo "About to run checkinstall make install"
+  sudo checkinstall -y --nodoc --pkgname=evart-client-sourcedep --pkgversion=2.2 make install
+  cd ..
+  sudo rm -rf build
+check-presence-script: |
+  #!/bin/bash
+  if test "x`dpkg-query -W -f='${Package} ${Status} ${Version}\n' evart-client-sourcedep`" != 'xevart-client-sourcedep install ok installed 2.2-1'; then
+    echo "evart-client-sourcedep not installed"
+    exit 1
+  else
+    exit 0
+  fi
+exec-path: evart-client-2.2
+depends: [checkinstall ]

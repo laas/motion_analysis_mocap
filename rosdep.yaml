@@ -1,0 +1,4 @@
+evart-client:
+  ubuntu:
+    source:
+      uri: 'https://raw.github.com/laas/motion_analysis_mocap/master/evart-client.rdmanifest'
